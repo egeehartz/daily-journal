@@ -27,6 +27,11 @@ textarea {
     background-color: #7E7F9A ;
     border-style: outset;
     border-color: darkslategray;
+    padding-block-end:10px;
+    padding-block-start:5.6px;
+    padding-inline-end:197px;
+    padding-inline-start:12px;
+
 }
 .mood {
     background-color: #97A7B3 ;
@@ -37,9 +42,10 @@ textarea {
     width: 95%;
 }
 .publish-button {
-    width: 7%;
+    width: 8.25%;
     align-self: center;
 }
 .journal-entry {
     padding-bottom: 3rem;
+    width: 197%;
 }

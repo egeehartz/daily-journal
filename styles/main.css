@@ -17,13 +17,17 @@ main {
     align-self: center;
 }
 
-input, textarea {
+input, textarea, .entry-list {
     font-family: 'Roboto Slab', serif; 
 }
 
-label, h2, h1, button {
+label, h2, h1, button, h3 {
     font-family: 'Red Rose', cursive;
   
 }
-
+.entry-list{
+    border-bottom: solid 1px;
+    margin-bottom: 1rem;
+    padding: 1.5rem 4rem;
+}
 

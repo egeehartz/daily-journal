@@ -1,7 +1,7 @@
 export const journalAsHTML = (journal) => {
     return `
     <section class="entry-list">
-    <div>Entry Number ${journal.id}</div>
+    <div><h3>Entry Number ${journal.id}</h3></div>
     <div>Date: ${journal.date}</div>
     <div>Concept(s): ${journal.concept}</div>
     <div class="old-journal-entry">"${journal.entry}"</div>
