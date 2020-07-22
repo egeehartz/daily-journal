@@ -27,9 +27,10 @@ form {
     align-self: center;
     margin: 10px 0;
     border-radius: 13px;
+    color: #fef9ef
 }
 .date {
-    background-color: #CAE7B9 ;
+    background-color: #96D076 ;
 }
 .concepts {
     background-color: #EA7B5D ;
