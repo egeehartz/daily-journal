@@ -9,58 +9,32 @@
 <body>
     <header>
         <!--logo goes here-->
-        <img class="logo" src="./dj-logo.png">
-        <h1 class="siteTitle">Site Title</h1>
+        <img class="logo-1" src="./images/daily-logo.png">
+        <img class="logo-3" src="./images/rider-logo.png">
+        
     </header>
     <main>
-        <!--parent-->
+        <nav class="navBar">
+            <div class="journal-nav"><a id="newEntry" href="#">New Entry</a></div>
+            <div class="journal-nav"><a id="pastEntryList" href="#">Past Entries</a></div>
+        </nav>
         <article class="formContainer">
-            <!--child-->
-            <form>
-                <h2 class="newEntry">New Journal Entry</h2>
-                
-                <fieldset class="userInput date">
-                    <label for="journalDate">Date of Entry</label>
-                    <input type="date" name="journalDate" id="journalDate">
-                </fieldset>
-                <fieldset class="userInput concepts">
-                    <label for="journalConcepts">Concepts Covered</label>
-                    <textarea class="concepts-covered">#example #randomthoughts</textarea>
-                </fieldset> 
-                <fieldset class="userInput entry">
-                    <label for="journalEntry">Journal Entry</label>
-                <textarea class="journal-entry">click to add text</textarea>
-                </fieldset> 
-                <fieldset class="userInput mood">
-                    <label for="journalMood">Mood</label>
-                    <select class="moods">
-                        <option>surprised</option>
-                        <option>happy</option>
-                        <option>sad</option>
-                        <option>bad</option>
-                        <option>disgusted</option>
-                        <option>angry</option>
-                        <option>fearful</option>
-                    </select>
-                </fieldset>
-            <button class="publish-button">Submit</button>
-        </form>
-    </article>
-        <!--child-->
-        <section class="automated">
-            <!--now managed by javascript-->
-            <h2>Journal Entries</h2>
-        
-        </section>
+            <!--newEntryList.js-->
+        </article>
+    <section class="automated">   
+        <!--./pastEntries/journalList.js-->
+    </section>
 
     </main>
-    <!--parent-->
+  
+
+
+
     <footer>
-        <!--child-->
         <section class="github-link">
             <a href="">GitHub</a>
         </section>
-        <!--child-->
+
         <section class="copyright">
 
         </section>

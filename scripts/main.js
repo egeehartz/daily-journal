@@ -1,4 +1,8 @@
-import {journalList} from './journalList.js'
+import {journalList} from './pastEntries/journalList.js'
+import { newEntryList } from './newEntry/newEntryList.js'
 
-journalList()
+//newEntryList()
+
+newEntry.addEventListener("click", newEntryList)
+pastEntryList.addEventListener("click",journalList)
 
