@@ -13,7 +13,6 @@ header {
     align-self: center;
     color: #fef9ef;
     padding: 0 21rem;
-    font-family: 'Red Rose', cursive;
 }
 main {
     background-color: #F7EAB5;
@@ -21,6 +20,13 @@ main {
 .newEntry {
     align-self: center;
 }
-label, option, 
+
+input, textarea {
+    font-family: 'Roboto Slab', serif; 
+}
+
+label, h2, h1 {
+    font-family: 'Red Rose', cursive;
+}
 
 

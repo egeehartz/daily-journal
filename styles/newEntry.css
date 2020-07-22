@@ -15,15 +15,23 @@ textarea {
 }
 .date {
     background-color: #96D076 ;
+    border-style: outset;
+    border-color: darkolivegreen;
 }
 .concepts {
     background-color: #EA7B5D ;
+    border-style: outset;
+    border-color: brown;
 }
 .entry {
     background-color: #7E7F9A ;
+    border-style: outset;
+    border-color: darkslategray;
 }
 .mood {
     background-color: #97A7B3 ;
+    border-style: outset;
+    border-color: gray;
 }
 textarea {
     width: 95%;
