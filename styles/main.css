@@ -1,4 +1,5 @@
 @import "./newEntry.css";
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&family=Roboto+Slab&display=swap');
 
 header {
     background-color: #5bc0eb;
@@ -12,6 +13,7 @@ header {
     align-self: center;
     color: #fef9ef;
     padding: 0 21rem;
+    font-family: 'Red Rose', cursive;
 }
 main {
     background-color: #F7EAB5;
@@ -19,5 +21,6 @@ main {
 .newEntry {
     align-self: center;
 }
+label, option, 
 
 
