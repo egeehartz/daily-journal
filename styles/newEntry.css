@@ -1,0 +1,34 @@
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+.userInput{
+    display: flex;
+    align-self: center;
+    margin: 10px 0;
+    border-radius: 13px;
+    color: #fef9ef
+}
+.date {
+    background-color: #96D076 ;
+}
+.concepts {
+    background-color: #EA7B5D ;
+}
+.entry {
+    background-color: #7E7F9A ;
+}
+.mood {
+    background-color: #97A7B3 ;
+}
+textarea {
+    width: 95%;
+}
+.publish-button {
+    width: 7%;
+    align-self: center;
+}
+.journal-entry {
+    padding-bottom: 3rem;
+}
