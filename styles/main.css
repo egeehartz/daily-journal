@@ -11,7 +11,9 @@ header {
 }
 main {
     background-color: #F7EAB5;
-    margin: 0 8rem
+}
+.formContainer, .navBar {
+    border: 1px dotted black;
 }
 .newEntry {
     align-self: center;
