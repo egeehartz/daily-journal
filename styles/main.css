@@ -1,8 +1,3 @@
-fieldset {
-    display: flex;
-    flex-direction: column;
-}
-
 header {
     background-color: #5bc0eb;
     display: flex;
@@ -11,3 +6,48 @@ header {
 .logo {
     max-width: 13%;
 }
+.siteTitle {
+    align-self: center;
+    color: #fef9ef;
+    padding: 0 21rem;
+}
+main {
+    background-color: #F7EAB5;
+}
+.newEntry {
+    align-self: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+.userInput{
+    display: flex;
+    align-self: center;
+    margin: 10px 0;
+    border-radius: 13px;
+}
+.date {
+    background-color: #CAE7B9 ;
+}
+.concepts {
+    background-color: #EA7B5D ;
+}
+.entry {
+    background-color: #7E7F9A ;
+}
+.mood {
+    background-color: #97A7B3 ;
+}
+textarea {
+    width: 95%;
+}
+.publish-button {
+    width: 7%;
+    align-self: center;
+}
+.journal-entry {
+    padding-bottom: 3rem;
+}
+

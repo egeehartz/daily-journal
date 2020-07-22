@@ -14,24 +14,24 @@
     </header>
     <main>
         <!--parent-->
-        <article class="">
+        <article class="formContainer">
             <!--child-->
             <form>
-                <h2>New Journal Entry</h2>
+                <h2 class="newEntry">New Journal Entry</h2>
                 
-                <fieldset>
+                <fieldset class="userInput date">
                     <label for="journalDate">Date of Entry</label>
                     <input type="date" name="journalDate" id="journalDate">
                 </fieldset>
-                <fieldset class="concepts">
+                <fieldset class="userInput concepts">
                     <label for="journalConcepts">Concepts covered</label>
                     <textarea class="concepts-covered">#example #randomthoughts</textarea>
                 </fieldset> 
-                <fieldset class="entry">
+                <fieldset class="userInput entry">
                     <label for="journalEntry">Journal Entry</label>
                 <textarea class="journal-entry">click to add text</textarea>
                 </fieldset> 
-                <fieldset>
+                <fieldset class="userInput mood">
                     <label for="journalMood">Mood for the day</label>
                     <select class="moods">
                         <option>surprised</option>
@@ -45,6 +45,7 @@
                 </fieldset>
             <button class="publish-button">Submit</button>
         </form>
+    </article>
         <!--child-->
         <section class="automated">
             <!--now managed by javascript-->
@@ -52,7 +53,6 @@
         
         </section>
 
-        </article>
     </main>
     <!--parent-->
     <footer>
