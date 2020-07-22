@@ -6,13 +6,8 @@ header {
     display: flex;
     
 }
-.logo {
-    max-width: 13%;
-}
-.siteTitle {
-    align-self: center;
-    color: #fef9ef;
-    padding: 0 21rem;
+.logo-1, .logo-3 {
+    max-width: 50%;
 }
 main {
     background-color: #F7EAB5;
@@ -25,8 +20,9 @@ input, textarea {
     font-family: 'Roboto Slab', serif; 
 }
 
-label, h2, h1 {
+label, h2, h1, button {
     font-family: 'Red Rose', cursive;
+    color:#fef9ef;
 }
 
 
