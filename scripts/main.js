@@ -1,4 +1,4 @@
-import {journalList} from './journalList.js'
+import {journalList} from './pastEntries/journalList.js'
 
 journalList()
 
