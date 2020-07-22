@@ -10,7 +10,7 @@ export const journalList = () => {
         journalHTMLrepresentation += journalAsHTML(journalObj)
     }
 
-    contentElement.innerHTML += `
+    contentElement.innerHTML = `
         <article class="journalEntriesList">
             ${journalHTMLrepresentation}
         </article>
