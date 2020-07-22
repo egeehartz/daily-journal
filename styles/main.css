@@ -2,3 +2,12 @@ fieldset {
     display: flex;
     flex-direction: column;
 }
+
+header {
+    background-color: #5bc0eb;
+    display: flex;
+    
+}
+.logo {
+    max-width: 13%;
+}
