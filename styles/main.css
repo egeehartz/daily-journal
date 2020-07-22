@@ -11,6 +11,7 @@ header {
 }
 main {
     background-color: #F7EAB5;
+    margin: 0 8rem
 }
 .newEntry {
     align-self: center;
@@ -22,7 +23,7 @@ input, textarea {
 
 label, h2, h1, button {
     font-family: 'Red Rose', cursive;
-    color:#fef9ef;
+  
 }
 
 
