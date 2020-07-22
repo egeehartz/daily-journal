@@ -1,5 +1,5 @@
 export const newEntryList = () => {
-    const contentElement = document.querySelector(".formContainer")
+    const contentElement = document.querySelector(".container")
 
     contentElement.innerHTML = `
     <form>

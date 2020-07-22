@@ -10,10 +10,13 @@ header {
     max-width: 50%;
 }
 main {
-    background-color: #F7EAB5;
+    display: flex;
 }
-.formContainer, .navBar {
-    border: 1px dotted black;
+.navBar {
+    background-color: #97A7B3;
+}
+.container {
+    background-color: #F7EAB5;
 }
 .newEntry {
     align-self: center;
