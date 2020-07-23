@@ -1,14 +1,8 @@
 @import "./newEntry.css";
+@import './header.css';
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&family=Roboto+Slab&display=swap');
 
-header {
-    background-color: #5bc0eb;
-    display: flex;
-    
-}
-.logo-1, .logo-3 {
-    max-width: 50%;
-}
+
 main {
     display: flex;
 }
@@ -16,7 +10,8 @@ main {
     background-color: #97A7B3;
 }
 .container {
-    background-color: #F7EAB5;
+    background-image:url("/images/notebookPage.png");
+    padding: 1.5rem 3rem;
 }
 .newEntry {
     align-self: center;
