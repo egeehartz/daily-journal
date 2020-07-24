@@ -12,11 +12,22 @@
         <img class="logo-3" src="./images/rider-logo.png">
     </header>
     <main class="bigContainer">
-             <nav class="navBar">
-            <div class="journal-nav"><a id="home" href="#">Home</a></div>
-            <div class="journal-nav"><a id="newEntry" href="#">Make a New Entry</a></div>
-            <div class="journal-nav"><a id="pastEntryList" href="#">Past Entries</a></div>
-        </nav> 
+        <nav class="navBar">
+            <div id="myNav" class="overlay">
+
+                <!--// Button to close the overlay navigation-->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+                <!--Overlay content-->
+                <div class="overlay-content">
+                    <a id="newEntry" href="#">Make a New Entry</a>
+                    <a id="pastEntryList" href="#">Past Entries</a>
+                </div>
+  
+            </div>
+                <span onclick="openNav()">open</span>
+        </nav>
+
         <article class="container">
             <!--newEntryList.js-->
         </article>
