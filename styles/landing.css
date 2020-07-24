@@ -1,7 +1,4 @@
-/*.landingPage {
-    background-image: url(/images/compositionCover.png);
 
-} */
 
 /* The Overlay (background) */
 .overlay {
@@ -16,6 +13,7 @@
     background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    background-image: url(/images/compositionCover.png);
   }
   
   /* Position the content inside the overlay */
@@ -25,6 +23,8 @@
     width: 100%; /* 100% width */
     text-align: center; /* Centered text/links */
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    border: 4px solid black;
+    background-color: blanchedalmond;
   }
   
   /* The navigation links inside the overlay */
@@ -32,14 +32,14 @@
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #818181;
+    color: black;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
   }
   
   /* When you mouse over the navigation links, change their color */
   .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: gray;
   }
   
   /* Position the close button (top right corner) */

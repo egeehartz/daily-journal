@@ -31,4 +31,6 @@ label, h2, h1, button, h3 {
     margin-bottom: 1rem;
     padding: 1.5rem 4rem;
 }
-
+footer {
+    border: 1px dotted black;
+}

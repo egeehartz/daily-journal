@@ -13,6 +13,7 @@ function openNav() {
 
 newEntry.addEventListener("click", newEntryList)
 pastEntryList.addEventListener("click",journalList)
-
+openNavi.addEventListener("click",openNav)
+closeNavi.addEventListener("click",closeNav)
 
 
