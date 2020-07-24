@@ -2,6 +2,7 @@ export const newEntryList = () => {
     const contentElement = document.querySelector(".container")
 
     contentElement.innerHTML = `
+    <div class="pattern">
     <form>
     <h2 class="newEntry">New Journal Entry</h2>
     <fieldset class="userInput date">
@@ -30,5 +31,6 @@ export const newEntryList = () => {
     </fieldset>
 <button class="publish-button">Submit</button>
 </form>
+</div>
     `
 }

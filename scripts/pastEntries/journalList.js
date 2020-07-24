@@ -11,8 +11,10 @@ export const journalList = () => {
     }
 
     contentElement.innerHTML = `
+    <div class="pattern">
         <article class="journalEntriesList">
             ${journalHTMLrepresentation}
         </article>
+        </div>
     `
 }
