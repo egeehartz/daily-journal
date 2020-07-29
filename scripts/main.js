@@ -1,5 +1,6 @@
 import {journalList} from './pastEntries/journalList.js'
 import { newEntryList } from './newEntry/newEntryList.js'
+import { getEntries } from './pastEntries/journalDataProvider.js';
 
 /* Open when someone clicks on the span element */
 function openNav() {
@@ -15,5 +16,7 @@ newEntry.addEventListener("click", newEntryList)
 pastEntryList.addEventListener("click",journalList)
 openNavi.addEventListener("click",openNav)
 closeNavi.addEventListener("click",closeNav)
+
+getEntries()
 
 
