@@ -1,0 +1,8 @@
+header {
+    background-color: #5bc0eb;
+    display: flex;
+    
+}
+.logo-1, .logo-3 {
+    max-width: 50%;
+}

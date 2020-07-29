@@ -8,23 +8,30 @@
 </head>
 <body>
     <header>
-        <!--logo goes here-->
         <img class="logo-1" src="./images/daily-logo.png">
         <img class="logo-3" src="./images/rider-logo.png">
-        
     </header>
-    <main>
+    <main class="bigContainer">
         <nav class="navBar">
-            <div class="journal-nav"><a id="newEntry" href="#">New Entry</a></div>
-            <div class="journal-nav"><a id="pastEntryList" href="#">Past Entries</a></div>
+            <div id="myNav" class="overlay">
+
+                <!--// Button to close the overlay navigation-->
+                <a id="closeNavi" href="javascript:void(0)" class="closebtn">&times;</a>
+  
+                <!--Overlay content-->
+                <div class="overlay-content">
+                    <a id="newEntry" href="#">Make a New Entry</a>
+                    <a id="pastEntryList" href="#">Past Entries</a>
+                </div>
+  
+            </div>
+                <span id="openNavi" >open</span>
         </nav>
-        <article class="formContainer">
+
+        <article class="container">
+            <div class="pattern"></div>
             <!--newEntryList.js-->
         </article>
-    <section class="automated">   
-        <!--./pastEntries/journalList.js-->
-    </section>
-
     </main>
   
 
