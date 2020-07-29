@@ -8,6 +8,13 @@
 
  let entries = []
 
+ const eventHub = document.querySelector(".bigContainer")
+
+ const dispatchStateChangeEvent = () => {
+     const entryStateChangedEvent = new CustomEvent("entryStateChanged")
+ 
+     eventHub.dispatchEvent(entryStateChangedEvent)
+ }
 
 
 export const getEntries = () => {
@@ -28,4 +35,19 @@ export const useJournalEntries = () => {
             Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
     )
     return sortedByDate
+}
+
+
+export const saveEntries = (note) => {
+    const jsonEntry = JSON.stringify(note)
+
+    return fetch('http://localhost:3000/entries', {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: jsonEntry
+    })
+    .then(getEntries)
+    .then(dispatchStateChangeEvent)
 }
