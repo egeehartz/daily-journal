@@ -1,3 +1,6 @@
+//obsolete?
+
+
 export const journalAsHTML = (journal) => {
     return `
     <section class="entry-list">

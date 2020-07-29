@@ -1,9 +1,10 @@
 /* styling paper */
 .container {
-    width: 600px;
-    height: 700px;
+    flex: 6;
+    width: 85%;
+    height: 100%;
     position: relative;
-    margin: 20px auto;
+    margin: 10px auto;
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: white;
