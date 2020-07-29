@@ -7,6 +7,7 @@ export const landingPageBuilder = () => {
             <div class="journal-nav"><a id="newEntry" href="#">Make a New Entry</a></div>
             <div class="journal-nav"><a id="pastEntryList" href="#">Past Entries</a></div>
         </nav>
+        <h2>Welcome!</h2>
     </section>
     `
 }

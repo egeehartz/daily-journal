@@ -11,14 +11,12 @@ main {
 .navBar {
     background-color: #97A7B3;
     flex: 1;
+    margin: 10px auto;
+    box-shadow: 0px 0px 5px 0px #888;
 }
 
-.newEntry {
-    align-self: center;
-}
-
-input, textarea, .entry-list {
-    font-family: 'Roboto Slab', serif; 
+#openNavi {
+    cursor: pointer;
 }
 
 label, h2, h1, button, h3 {

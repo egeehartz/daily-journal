@@ -27,6 +27,13 @@
       "entry": "did this work?",
       "mood": "sad",
       "id": 4
+    },
+    {
+      "date": "2020-07-23",
+      "concept": "#example #randomthoughts",
+      "entry": "IT WORKS",
+      "mood": "happy",
+      "id": 5
     }
   ]
 }

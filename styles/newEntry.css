@@ -3,6 +3,11 @@ form {
     flex-direction: column;
 
 }
+
+.newEntry {
+    align-self: center;
+}
+
 .userInput{
     display: flex;
     align-self: center;
@@ -41,11 +46,15 @@ textarea {
 textarea {
     width: 95%;
 }
-.publish {
+#publish {
     width: 16%;
     align-self: center;
 }
 .journal-entry {
     padding-bottom: 3rem;
     width: 197%;
+}
+
+input, textarea, .entry-list {
+    font-family: 'Roboto Slab', serif; 
 }
