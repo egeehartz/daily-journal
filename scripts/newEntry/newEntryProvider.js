@@ -1,6 +1,6 @@
 // Mood Provider
 
-let moods = []
+/*let moods = []
 
 export const getMoods = () => {
     return fetch(`http://localhost:3000/database`)
@@ -13,5 +13,5 @@ export const getMoods = () => {
 
 export const useMoods = () => {
     return moods.slice()
-}
+} */
 

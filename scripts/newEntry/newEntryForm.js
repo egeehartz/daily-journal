@@ -47,12 +47,12 @@ const render = () => {
                 <fieldset class="userInput mood">
                     <label for="journalMood">Mood</label>
                     <select class="moods">
-                    ${
-                        allMoods.map(
-                            (mood) => {
-                                return `<option id="mood--${mood.id}>${mood.label}</option>`
-                            }
-                        ).join("")
+                    <option>mad</option>
+                    <option>sad</option>
+                    <option>disgusted</option>
+                    <option>happy</option>
+                    <option>surprised</option>
+                    <option>fearful</option>   
                     }
                     </select>
                 </fieldset>
