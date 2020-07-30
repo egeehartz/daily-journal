@@ -2,38 +2,24 @@
   "entries": [
     {
       "id": 1,
-      "date": "07/24/2025",
+      "date": "07/24/2020",
       "concept": "HTML & CSS",
       "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
       "mood": "Ok"
     },
     {
       "id": 2,
-      "date": "07/25/2025",
+      "date": "07/25/2020",
       "concept": "Flexbox",
       "entry": "I played Flexbox Froggy to understand the different flexbox properties to move content on a page",
       "mood": "Happy"
     },
     {
       "id": 3,
-      "date": "07/26/2025",
+      "date": "07/26/2020",
       "concept": "github",
       "entry": "GitHub was super confusing at first but I think I'm getting the hang of it.",
       "mood": "Ok"
-    },
-    {
-      "date": "2020-07-15",
-      "concept": "test test",
-      "entry": "did this work?",
-      "mood": "sad",
-      "id": 4
-    },
-    {
-      "date": "2020-07-23",
-      "concept": "#example #randomthoughts",
-      "entry": "IT WORKS",
-      "mood": "happy",
-      "id": 5
     }
   ]
 }
