@@ -53,7 +53,6 @@ const render = () => {
                     <option>happy</option>
                     <option>surprised</option>
                     <option>fearful</option>   
-                    }
                     </select>
                 </fieldset>
                     <button id="publish">Submit</button>

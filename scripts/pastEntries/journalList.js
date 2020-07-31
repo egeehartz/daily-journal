@@ -3,13 +3,18 @@ import {journalAsHTML} from './journals.js'
 
 
 const contentElement = document.querySelector(".container")
+const eventHub = document.querySelector(".bigContainer")
+
+eventHub.addEventListener("entryStateChanged", () => {
+    const allEntries = useJournalEntries()
+    render(allEntries)
+})
 
 
 export const journalList = () => {
     getEntries()
         .then(() => {
             const allEntries = useJournalEntries()
-            console.log(allEntries)
             render(allEntries)
         })
     }
@@ -28,15 +33,3 @@ const render = (entryArray) => {
         </div>`
 }
  
-/*  let journalHTMLrepresentation = ""
-    for(const journalObj of journals){
-        journalHTMLrepresentation += journalAsHTML(journalObj)
-    }
-
-    contentElement.innerHTML = `
-    <div class="pattern">
-        <article class="journalEntriesList">
-            ${journalHTMLrepresentation}
-        </article>
-        </div>
-    ` */
