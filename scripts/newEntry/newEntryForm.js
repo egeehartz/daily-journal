@@ -47,13 +47,12 @@ const render = () => {
                 <fieldset class="userInput mood">
                     <label for="journalMood">Mood</label>
                     <select class="moods">
-                        <option>surprised</option>
-                        <option>happy</option>
-                        <option>sad</option>
-                        <option>bad</option>
-                        <option>disgusted</option>
-                        <option>angry</option>
-                        <option>fearful</option>
+                    <option>mad</option>
+                    <option>sad</option>
+                    <option>disgusted</option>
+                    <option>happy</option>
+                    <option>surprised</option>
+                    <option>fearful</option>   
                     </select>
                 </fieldset>
                     <button id="publish">Submit</button>

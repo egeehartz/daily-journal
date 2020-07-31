@@ -1,4 +1,4 @@
-//obsolete?
+
 
 
 export const journalAsHTML = (journal) => {
