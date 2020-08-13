@@ -1,4 +1,5 @@
 import { saveEntries } from "../pastEntries/journalDataProvider.js"
+import { useMoods } from "./MoodProvider.js"
 
 
 
@@ -28,6 +29,7 @@ eventHub.addEventListener("click", clickEvent => {
 
 
 const render = () => {
+    const allMoods = useMoods()
     contentTarget.innerHTML = `
         <div class="pattern">
         <form>
@@ -47,12 +49,14 @@ const render = () => {
                 <fieldset class="userInput mood">
                     <label for="journalMood">Mood</label>
                     <select class="moods">
-                    <option>mad</option>
-                    <option>sad</option>
-                    <option>disgusted</option>
-                    <option>happy</option>
-                    <option>surprised</option>
-                    <option>fearful</option>   
+                    <option value="0">How do you feel?</option>
+                    ${
+                        allMoods.map(
+                            (mood) => {
+                                return `<option id="mood--${ mood.id }">${ mood.label }</option>`
+                            }
+                        ).join("")
+                    }  
                     </select>
                 </fieldset>
                     <button id="publish">Submit</button>
