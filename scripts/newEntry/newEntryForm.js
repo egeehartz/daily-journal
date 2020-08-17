@@ -40,11 +40,11 @@ const render = () => {
                 </fieldset>
                 <fieldset class="userInput concepts">
                     <label for="journalConcepts">Concepts Covered</label>
-                    <textarea class="concepts-covered">#example #randomthoughts</textarea>
+                    <textarea class="concepts-covered" placeholder="#example #randomthoughts"></textarea>
                 </fieldset> 
                 <fieldset class="userInput entry">
                     <label for="journalEntry">Journal Entry</label>
-                    <textarea class="journal-entry">click to add text</textarea>
+                    <textarea class="journal-entry" placeholder="click to add text"></textarea>
                 </fieldset> 
                 <fieldset class="userInput mood">
                     <label for="journalMood">Mood</label>
