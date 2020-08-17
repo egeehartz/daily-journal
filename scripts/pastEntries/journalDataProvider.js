@@ -18,17 +18,13 @@
 
 
 export const getEntries = () => {
-    return fetch(`http://localhost:3000/entries`)
+    return fetch('http://localhost:3000/entries?_expand=mood')
         .then(entries => entries.json())
         .then(parsedEntries => {
             entries = parsedEntries
         })
 }
 
-/*
-    You export a function that provides a version of the
-    raw data in the format that you want
-*/
 export const useJournalEntries = () => {
     const sortedByDate = entries.sort(
         (currentEntry, nextEntry) =>
@@ -50,4 +46,12 @@ export const saveEntries = (note) => {
     })
     .then(getEntries)
     .then(dispatchStateChangeEvent)
+}
+
+export const deleteEntry = (entryId) => {
+    return fetch(`http://localhost:3000/entries/${entryId}`, {
+        method: "DELETE"
+    })
+        .then(getEntries)
+        .then(dispatchStateChangeEvent)
 }
