@@ -20,7 +20,7 @@ eventHub.addEventListener("click", clickEvent => {
             date: entryDate.value,
             concept: entryConcepts.value,
             entry: entryText.value,
-            mood: entryMood.value
+            moodId: parseInt(entryMood.value)
         }
 
         saveEntries(newEntry)
@@ -53,7 +53,7 @@ const render = () => {
                     ${
                         allMoods.map(
                             (mood) => {
-                                return `<option id="mood--${ mood.id }">${ mood.label }</option>`
+                                return `<option value="${ mood.id }">${ mood.label }</option>`
                             }
                         ).join("")
                     }  

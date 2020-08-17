@@ -1,52 +1,37 @@
 {
   "entries": [
     {
-      "id": 1,
-      "date": "07/24/2020",
-      "concept": "HTML & CSS",
-      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-      "moodId": 1
-    },
-    {
-      "id": 2,
-      "date": "07/25/2020",
-      "concept": "Flexbox",
-      "entry": "I played Flexbox Froggy to understand the different flexbox properties to move content on a page",
-      "moodId": 2
-    },
-    {
-      "id": 3,
-      "date": "07/26/2020",
-      "concept": "github",
-      "entry": "GitHub was super confusing at first but I think I'm getting the hang of it.",
-      "moodId": 3
+      "date": "2020-08-17",
+      "concept": "test",
+      "entry": "testing",
+      "moodId": 2,
+      "id": 1
     }
   ],
   "moods": [
     {
-        "id": 1,
-        "label": "bad"
+      "id": 1,
+      "label": "bad"
     },
     {
-        "id": 2,
-        "label": "surprised"
+      "id": 2,
+      "label": "surprised"
     },
     {
-        "id": 3,
-        "label": "happy"
+      "id": 3,
+      "label": "happy"
     },
     {
-        "id": 4,
-        "label": "angry"
+      "id": 4,
+      "label": "angry"
     },
     {
-        "id": 5,
-        "label": "sad"
+      "id": 5,
+      "label": "sad"
     },
     {
-        "id": 6,
-        "label": "fearful"
+      "id": 6,
+      "label": "fearful"
     }
-
-]
+  ]
 }

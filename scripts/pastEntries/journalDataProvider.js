@@ -18,7 +18,7 @@
 
 
 export const getEntries = () => {
-    return fetch(`http://localhost:3000/entries?_expand=mood`)
+    return fetch('http://localhost:3000/entries?_expand=mood')
         .then(entries => entries.json())
         .then(parsedEntries => {
             entries = parsedEntries
