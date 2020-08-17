@@ -1,5 +1,5 @@
 import { saveEntries } from "../pastEntries/journalDataProvider.js"
-import { useMoods } from "./MoodProvider.js"
+import { useMoods, getMoods } from "./MoodProvider.js"
 
 
 
@@ -67,5 +67,10 @@ const render = () => {
 
 
 export const entryForm = () => {
+    getMoods()
+    .then( ()=> {
+        const moods = useMoods()
+        render(moods)
+    })
     render()
 }
