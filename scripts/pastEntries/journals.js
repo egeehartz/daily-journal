@@ -1,15 +1,24 @@
-import {deleteEntry} from "./journalDataProvider.js"
+import {deleteEntry, editEntry} from "./journalDataProvider.js"
 
 
 const eventHub = document.querySelector(".container")
 
 eventHub.addEventListener("click", clickEvent => {
     if (clickEvent.target.id.startsWith("delete--")) {
-        const [ prompt, entryIdString ] = clickEvent.target.id.split("--")  // "3"
+        const [ prefix, entryIdString ] = clickEvent.target.id.split("--")  // "3"
 
         deleteEntry(entryIdString)
     }
 })
+
+eventHub.addEventListener("click", clickEvent => {
+    if (clickEvent.target.id.startsWith("edit--")) {
+        const [prefix, entryStringId] = clickEvent.target.id.solit("--")
+
+        editEntry(entryStringId)
+    }
+})
+
 
 export const journalAsHTML = (journal) => {
     return `
@@ -20,7 +29,7 @@ export const journalAsHTML = (journal) => {
     <div class="old-journal-entry">"${journal.entry}"</div>
     <div>Mood: ${journal.mood.label}</div>
     <button id="delete--${journal.id}">Delete Entry</button>
-    <button class="edit">Edit Entry</button>
+    <button id="edit--${journal.id}">Edit Entry</button>
 </section>
     `
 }

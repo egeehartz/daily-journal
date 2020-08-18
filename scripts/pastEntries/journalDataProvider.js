@@ -55,3 +55,12 @@ export const deleteEntry = (entryId) => {
         .then(getEntries)
         .then(dispatchStateChangeEvent)
 }
+
+
+export const editEntry = (entryId) => {
+    return fetch(`http://localhost:3000/entries/${entryId}`, {
+        method: "PUT"
+    })
+        .then(getEntries)
+        .then(dispatchStateChangeEvent)
+}

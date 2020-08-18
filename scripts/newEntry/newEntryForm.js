@@ -34,6 +34,7 @@ const render = () => {
         <div class="pattern">
         <form>
             <h2 class="newEntry">New Journal Entry</h2>
+            <input type="hidden" name="entryId" id="entryId">
                 <fieldset class="userInput date">
                     <label for="journalDate">Date of Entry</label>
                     <input type="date" name="journalDate" id="journalDate">
