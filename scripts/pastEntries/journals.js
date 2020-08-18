@@ -13,7 +13,7 @@ eventHub.addEventListener("click", clickEvent => {
 
 eventHub.addEventListener("click", clickEvent => {
     if (clickEvent.target.id.startsWith("edit--")) {
-        const [prefix, entryStringId] = clickEvent.target.id.solit("--")
+        const [prefix, entryStringId] = clickEvent.target.id.split("--")
 
         editEntry(entryStringId)
     }
