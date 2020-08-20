@@ -1,7 +1,7 @@
 import {deleteEntry, editEntry} from "./journalDataProvider.js"
 
 
-const eventHub = document.querySelector(".container")
+const eventHub = document.querySelector(".bigContainer")
 
 eventHub.addEventListener("click", clickEvent => {
     if (clickEvent.target.id.startsWith("delete--")) {
@@ -13,13 +13,14 @@ eventHub.addEventListener("click", clickEvent => {
 
 eventHub.addEventListener("click", clickEvent => {
     if (clickEvent.target.id.startsWith("edit--")) {
+        console.log("edit clicked")
         const [prefix, entryId] = clickEvent.target.id.split("--")
         const editClicked = new CustomEvent("editClicked", {
             detail: {
                 entryId: parseInt(entryId)
             }
         })
-        dispatchEvent(editClicked)
+        eventHub.dispatchEvent(editClicked)
     }
 })
 

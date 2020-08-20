@@ -1,4 +1,4 @@
-import { saveEntries, editEntry, getEntries } from "../pastEntries/journalDataProvider.js"
+import { saveEntries, editEntry, getEntries, useJournalEntries } from "../pastEntries/journalDataProvider.js"
 import { useMoods, getMoods } from "./MoodProvider.js"
 
 
@@ -8,7 +8,9 @@ const contentTarget = document.querySelector(".container")
 
 
 eventHub.addEventListener("editClicked", customEvent => {
-    const allEntries = useEntries()
+    console.log("edit heard")
+    render()
+    const allEntries = useJournalEntries()
     const entryId = customEvent.detail.entryId
     const objToEdit = allEntries.find(entry => entryId === entry.id)
 
@@ -17,15 +19,15 @@ eventHub.addEventListener("editClicked", customEvent => {
     const entryConcepts = document.querySelector(".concepts-covered")
     const entryText = document.querySelector(".journal-entry")
     const entryMood = document.querySelector(".moods")
-    const id = document.querySelector("#entryId").value
+    const id = document.querySelector("#entryId")
 
 
-    
     entryDate.value = objToEdit.date
     entryConcepts.value = objToEdit.concept
     entryText.value = objToEdit.entry
     entryMood.value = objToEdit.moodId
     id.value = parseInt(entryId)
+
 
 })
 
