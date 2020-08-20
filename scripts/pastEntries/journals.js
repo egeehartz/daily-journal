@@ -13,9 +13,13 @@ eventHub.addEventListener("click", clickEvent => {
 
 eventHub.addEventListener("click", clickEvent => {
     if (clickEvent.target.id.startsWith("edit--")) {
-        const [prefix, entryStringId] = clickEvent.target.id.split("--")
-
-        editEntry(entryStringId)
+        const [prefix, entryId] = clickEvent.target.id.split("--")
+        const editClicked = new CustomEvent("editClicked", {
+            detail: {
+                entryId: parseInt(entryId)
+            }
+        })
+        dispatchEvent(editClicked)
     }
 })
 
